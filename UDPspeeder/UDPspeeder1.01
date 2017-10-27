@@ -22,7 +22,7 @@ if [[ -f /usr/bin/apt-get ]] || [[ -f /usr/bin/yum ]]; then
 
 else
 
-	echo -e " \n哈哈……这个 ${red}脚本${none} 不支持你的系统。 ${yellow}(-_-) ${none}\n" && exit 1
+	echo -e " \n……这个 ${red}脚本${none} 不支持你的系统。 ${yellow}(-_-) ${none}\n" && exit 1
 
 fi
 
@@ -54,7 +54,7 @@ install() {
 
 		备注...这个脚本仅负责安装和卸载...
 		
-		如何配置...后台运行...开机动这些东西嘛...
+		如何配置后台运行开机动这些东西还未完善
 
 		大胸弟....你自己解决咯...
 
@@ -75,7 +75,7 @@ unistall() {
 		rm -rf /usr/local/bin/speederv2
 		echo -e " \n$green卸载完成...$none\n" && exit 1
 	else
-		echo -e " \n$red未安装 UDPspeeder ....卸载个鸡鸡哦...$none\n" && exit 1
+		echo -e " \n$red未安装 UDPspeeder ....卸载...$none\n" && exit 1
 	fi
 }
 error() {
